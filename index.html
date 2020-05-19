@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Gallows</title>
+      
+</head>
+<body>
+    <div id="container">
+        <div id="imgContainer">
+            <img src="img/hangman-0.png" id="gallowImg" alt="hangman">
+        </div>
+        <div id="textBlock">
+            <h1>Гра "Шибениця"</h1>
+            <p>Слово: <strong id="answerBlock"></strong></p>
+            <p>Помилки (<span id="errorCount">0</span>): <span id="errorList"></span></p>
+            <label for="letterInp">Літера:</label>
+            <input type="text" disabled id="letterInp" maxlength="1" value="">  <button disabled onclick="enter()" id="enter">Ввести</button><br>
+            <button onclick="start()">Почати гру</button>
+            <p id="rezult"></p>
+        </div>
+    </div>
+    <script src="./main.js"></script>   
+</body>
+</html>
